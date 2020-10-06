@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+          <h1 class="mx-4">Goku Component</h1>
+          <input 
+            class="mx-2 form-control"
+            #gokuInput
+            (keyup)="keyUp(gokuInput.value)">
+          <div class="col-sm-12">
+              <!-- Componente hijo -->
+            <app-gohan [kamehamehaGohan]="kamehamehaGoku"></app-gohan>
+          </div>
+      </div>
+        
+    </div>
+  </div>
